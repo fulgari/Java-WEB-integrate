@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 测试IdentityServlet的验证码生成 -->
+<script type="text/javascript">
+function reloadImage(){
+	document.getElementById('btn').disabled=true;
+	document.getElementById('identity').src='servlet/IdentityServlet?ts='+new Date().getTime();
+}
+</script>
+<img src="servlet/IdentityServlet" id="identity" onload="btn.disabled=false;"/>
+<input type=button value="change image" onclick="reloadImage()" id="btn">
+</body>
+</html>

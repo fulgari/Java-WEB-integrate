@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Upload user info</title>
+</head>
+<body>
+<form action="/Integrate/PostServlet" method="POST">
+<div align="center">
+<br/>
+<fieldset style='width:80%'>
+<legend>fill customer info</legend>
+<div class='line'>
+<div align="left" class='leftDiv'>Please write your name:</div>
+<div align="left" class='rightDiv'><input type="text" name="name" class="text"/>
+</div></div>
+
+<div class='line'>
+<div align="left" class='leftDiv'>Please write your password:</div>
+<div align="left" class='rightDiv'><input type="password" name="password" class="text"/>
+</div></div>
+
+<div class='line'>
+<div align="left" class='leftDiv'>Please confirm your password:</div>
+<div align="left" class='rightDiv'><input type="password" name="passwordConfirm" class="text"/>
+</div></div>
+
+<div class='line'>
+<div align="left" class='leftDiv'>Please choose your gender:</div>
+<div align="left" class='rightDiv'>
+	<input type="radio" name="sex" value="male" id="sexMale" /> <!-- single select == 'radio' -->
+	<label for="sexMale">male</label>
+	<input type="radio" name="sex" value="female" id="sexFemale" />
+	<label for="sexFemale">female</label>
+</div></div>
+
+<div class='line'>
+<div align="left" class='leftDiv'>Please enter your age:</div>
+<div align="left" class="rightDiv"><input type="text" name="age" class="text"></div>
+</div>
+
+<div class='line'>
+<div align="left" class='leftDiv'>Please enter your birthday:</div>
+<div align="left" class="rightDiv"><input id="date" type="date" name="birthday"></div>
+</div>
+
+<div class='line'>
+<div align="left" class='leftDiv'>Please enter your region:</div>
+<div align="left" class="rightDiv">
+<select name="area">
+<option>---Please choose the city---</option>
+<optgroup label="Guangzhou">
+	<option value="Guangzhou Tianhe">Tianhe</option>
+	<option value="Guangzhou Yuexiu">Yuexiu</option>
+	<option value="Guangzhou Baiyun">Baiyun</option>
+</optgroup>
+<optgroup label="Beijing">
+	<option value="Beijing Xicheng">Xicheng</option>
+	<option value="Beijing Chaoyang">Chaoyang</option>
+	<option value="Beijing Haidian">Haidian</option>
+</optgroup>
+</select>
+</div>
+<div class="line">
+	<div align="left" class='leftDiv'></div>
+	<div align="left" class="rightDiv"><br/><input type="submit" value="upload info" name='btn' class='button'><br/>
+	</div>
+</div>
+</div>
+</fieldset>
+</div>
+</form>
+</body>
+</html>
